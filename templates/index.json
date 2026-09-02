@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero",
+      "settings": {
+        "eyebrow": "PEAK PERFORMANCE SPORTSWEAR",
+        "heading": "Built to move. Designed to perform.",
+        "text": "Performance apparel engineered for training, movement and everyday wear.",
+        "button_label": "Shop Collection"
+      }
+    }
+  },
+  "order": [
+    "hero"
+  ]
+}

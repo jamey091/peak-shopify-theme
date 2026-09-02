@@ -1,0 +1,37 @@
+<header class="peak-header">
+  <div class="peak-header__inner">
+
+    <a href="{{ routes.root_url }}" class="peak-logo">
+      PEAK
+    </a>
+
+    <nav class="peak-nav" aria-label="Main navigation">
+      <a href="{{ routes.all_products_collection_url }}">Shop</a>
+
+      {% for link in section.settings.menu.links %}
+        <a href="{{ link.url }}">{{ link.title }}</a>
+      {% endfor %}
+    </nav>
+
+    <div class="peak-header__actions">
+      <a href="{{ routes.cart_url }}" class="peak-cart">
+        Cart ({{ cart.item_count }})
+      </a>
+    </div>
+
+  </div>
+</header>
+
+{% schema %}
+{
+  "name": "PEAK Header",
+  "settings": [
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Navigation menu",
+      "default": "main-menu"
+    }
+  ]
+}
+{% endschema %}
